@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00AFFC861C5993EE00648FB7 /* ReminderInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AFFC851C5993EE00648FB7 /* ReminderInstance.swift */; };
+		00AFFC871C5993EE00648FB7 /* ReminderInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AFFC851C5993EE00648FB7 /* ReminderInstance.swift */; };
 		00F1F25F1C57100C00D120A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F25E1C57100C00D120A8 /* AppDelegate.swift */; };
 		00F1F2611C57100C00D120A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F2601C57100C00D120A8 /* ViewController.swift */; };
 		00F1F2641C57100C00D120A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F1F2621C57100C00D120A8 /* Main.storyboard */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00AFFC851C5993EE00648FB7 /* ReminderInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderInstance.swift; sourceTree = "<group>"; };
 		00F1F25B1C57100C00D120A8 /* Constant Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Constant Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F1F25E1C57100C00D120A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F1F2601C57100C00D120A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 				00F1F25E1C57100C00D120A8 /* AppDelegate.swift */,
 				00F1F2601C57100C00D120A8 /* ViewController.swift */,
 				00F1F2621C57100C00D120A8 /* Main.storyboard */,
+				00AFFC851C5993EE00648FB7 /* ReminderInstance.swift */,
 				00F1F2651C57100C00D120A8 /* Assets.xcassets */,
 				00F1F2671C57100C00D120A8 /* LaunchScreen.storyboard */,
 				00F1F26A1C57100C00D120A8 /* Info.plist */,
@@ -257,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F1F2611C57100C00D120A8 /* ViewController.swift in Sources */,
+				00AFFC861C5993EE00648FB7 /* ReminderInstance.swift in Sources */,
 				00F1F25F1C57100C00D120A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00AFFC871C5993EE00648FB7 /* ReminderInstance.swift in Sources */,
 				00F1F2741C57100C00D120A8 /* Constant_ReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +490,7 @@
 				00F1F2851C57100C00D120A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00F1F2861C57100C00D120A8 /* Build configuration list for PBXNativeTarget "Constant ReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +499,7 @@
 				00F1F2881C57100C00D120A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00F1F2891C57100C00D120A8 /* Build configuration list for PBXNativeTarget "Constant ReminderUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +508,7 @@
 				00F1F28B1C57100C00D120A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
