@@ -28,7 +28,7 @@ class ReminderInstance {
     var completed_date: NSDate
     
     var notification: Bool
-    var notification_frequency: Int // Minutes
+    var notification_frequency: Double // Minutes
     var last_notification: NSDate
     
     var expired: Bool
@@ -45,7 +45,7 @@ class ReminderInstance {
         completed_date: NSDate = NSDate(),
         notification: Bool = true,
         // 4 hours notification cycle by default
-        notification_frequency: Int = 4*60,
+        notification_frequency: Double = 4*60,
         last_notification: NSDate = NSDate(),
         expired: Bool = false
     )
@@ -72,6 +72,28 @@ class ReminderInstance {
         self.notification = notification
         self.notification_frequency = notification_frequency
         self.last_notification = last_notification
+    }
+    
+    func timeLeft()-> NSTimeInterval {
+        return NSDate().timeIntervalSinceDate(self.due_date)
+    }
+    
+    
+    func shouldNotify() -> Bool {
+        // is the last time you notify plus the waiting period no later than the current time?
+        return last_notification.dateByAddingTimeInterval(60*self.notification_frequency).compare(
+            NSDate()) != NSComparisonResult.OrderedDescending
+    }
+    
+    func isExpired() -> Bool {
+        if (self.expired){
+            return self.expired
+        }
+        if(NSDate().compare(self.due_date) != NSComparisonResult.OrderedAscending ) {
+            self.expired = true
+        }
+        // false
+        return self.expired
     }
 }
     
