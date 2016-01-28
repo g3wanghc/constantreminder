@@ -1,5 +1,5 @@
 //
-//  reminder_event.swift
+//  ReminderInstance.swift
 //  Constant Reminder
 //
 //  Created by Hanchen Wang on 2016-01-27.
