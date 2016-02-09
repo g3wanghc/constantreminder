@@ -26,15 +26,12 @@ Project Links
 * [Jira] - Project Management
 * [Stash] - Version Control
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
 ### Installation
 
 You need an Apple device:
 
 ```sh
-$ use xCode
+$ use xCode to compile the code onto your iphone/ipod/ipad
 ```
 
 ### Development
@@ -51,7 +48,7 @@ email hanchen.wang@mail.utoronto.ca
 hanchen.wang@mail.utoronto.ca
 
 ##### Kevin Gu
-Tianchenkevin@gmail.com
+tianchenkevin@gmail.com
 
    [jira]: <https://jira.hanchendev.me>
    [stash]: <https://stash.hanchendev.me>
