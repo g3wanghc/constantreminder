@@ -9,60 +9,17 @@
 
 import UIKit
 
-class SecondViewController: UIViewController,UITextFieldDelegate {
+class SecondViewController: UIViewController {
     
-    
-    
-    @IBOutlet weak var Titletext: UITextField!
-    @IBOutlet weak var Destext: UITextField!
-    @IBOutlet weak var Prority: UISegmentedControl!
-    
-    
-    //for testing use only
-    @IBOutlet weak var Titeltextlabel: UILabel!
-    @IBOutlet weak var Destextlabel: UILabel!
-    @IBOutlet weak var Proritylabel: UILabel!
-    
-    
-    
-    //TextFiel Delegate
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
-        if textField == Titletext{
-            Titeltextlabel.text = Titletext.text
-            Destext.becomeFirstResponder()
-        }
-        else{
-            Destextlabel.text = Destext.text
-            Destext.resignFirstResponder()
-        }
-        
-        return true
-    }
-    
-    @IBAction func changePrority(sender: AnyObject) {
-        
-        if Prority.selectedSegmentIndex == 0{
-            Proritylabel.text = "You have choose Critical Prority"
-        }
-        if Prority.selectedSegmentIndex == 1{
-            Proritylabel.text = "You have choose Major Prority"
-        }
-        if Prority.selectedSegmentIndex == 2{
-            Proritylabel.text = "You have choose Minor Prority"
-        }
-    }
- 
-    
-
+    @IBOutlet weak var title_text: UITextField!
+    @IBOutlet weak var desc_text: UITextField!
+    @IBOutlet weak var prority: UISegmentedControl!
+    @IBOutlet weak var create: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Titletext.delegate = self
-        Destext.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,4 +29,3 @@ class SecondViewController: UIViewController,UITextFieldDelegate {
     
     
 }
-
