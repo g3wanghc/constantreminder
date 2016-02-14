@@ -9,7 +9,7 @@
         <!--My Tasks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Constant_Reminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Constant_Reminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="1546" y="-382"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Add Task View Controller-->
         <scene sceneID="z7y-KZ-aEN">
             <objects>
-                <viewController id="xaw-8X-z6D" customClass="SecondViewController" customModule="Constant_Reminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddTaskViewController" id="xaw-8X-z6D" customClass="AddTaskViewController" customModule="Constant_Reminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9d1-Zf-NH6"/>
                         <viewControllerLayoutGuide type="bottom" id="hdT-KE-1s5"/>
