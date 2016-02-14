@@ -8,17 +8,32 @@
 
 import UIKit
 
-class AddTaskViewController: UIViewController {
+class AddTaskViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var title_text: UITextField!
     @IBOutlet weak var desc_text: UITextField!
     @IBOutlet weak var prority: UISegmentedControl!
     @IBOutlet weak var create: UIButton!
+
+    
+    func dismissKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.dismissKeyboard()
+        return false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        // Dismiss the keyboard on tap
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
+        title_text.delegate = self
+        desc_text.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
