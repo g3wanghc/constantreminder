@@ -34,6 +34,8 @@ class AddTaskViewController: UIViewController, UITextFieldDelegate {
         
         title_text.delegate = self
         desc_text.delegate = self
+        
+        desc_text.contentVerticalAlignment = UIControlContentVerticalAlignment.Top
     }
     
     override func didReceiveMemoryWarning() {
