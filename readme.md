@@ -1,4 +1,4 @@
-# Constant Reminder
+# Constant Reminder (Deprecated)
 
 Constant Reminder is an IOS App codded in swift that can keep track of 7 thing that's on your mind.
 
@@ -13,43 +13,10 @@ Constant Reminder is an IOS App codded in swift that can keep track of 7 thing t
 4. Each entry self deletes X hours after due date. (12 by default)
 5. Push notification on entries N hours before due date. (24 hours by default)
 
-> Project in Progress
+### Testing
 
-### Version
-1.0.0
-
-### Links
-
-Project Links
-
-* [Chat] - Chatroom
-* [Jira] - Project Management
-* [Stash] - Version Control
-
-### Installation
-
-You need an Apple device:
+IOS Device:
 
 ```sh
 $ use xCode to compile the code onto your iphone/ipod/ipad
 ```
-
-### Development
-
-Want to contribute? Great!
-
-```sh
-email hanchen.wang@mail.utoronto.ca 
-```
-
-### Contact
-
-##### Hanchen Wang 
-hanchen.wang@mail.utoronto.ca
-
-##### Kevin Gu
-tianchenkevin@gmail.com
-
-   [jira]: <https://jira.hanchendev.me>
-   [stash]: <https://stash.hanchendev.me>
-   [chat]: <https://hanchen.slack.com>
